@@ -5,6 +5,8 @@
 
 # NdLinearGated: Adaptive Compute Extension for NdLinear
 
+**Note:** Find a detailed report for the project [here](https://drive.google.com/file/d/1n4ddA71mTe2Y47fdsvnB6mH1G_WJWEwd/view?usp=sharing).
+
 ## Overview
 
 This repository extends the original [`NdLinear`](https://github.com/ensemble-core/NdLinear) module from Ensemble AI by adding learnable **per-mode gating** for input-dependent computation. 
