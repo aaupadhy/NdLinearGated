@@ -1,0 +1,27 @@
+accuracy: 41.49
+dataset: cifar10
+gate_entropy: !!python/object/apply:numpy._core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  nYA+rnfb7z8=
+gated_modes: first
+gating_hidden_dim: 16
+gating_mode: soft
+model: NdLinearGated_soft_first_16
+peak_memory_mb: 116.7333984375
+percent_active_slices: 60.27506391207377
+proxy_compute: 2502.3336629867554
+train_time: 895.7991001605988

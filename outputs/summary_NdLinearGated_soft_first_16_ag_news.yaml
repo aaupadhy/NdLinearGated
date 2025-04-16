@@ -1,0 +1,27 @@
+accuracy: 90.77631578947368
+dataset: ag_news
+gate_entropy: !!python/object/apply:numpy._core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  zDRlMdCt7T8=
+gated_modes: first
+gating_hidden_dim: 16
+gating_mode: soft
+model: NdLinearGated_soft_first_16
+peak_memory_mb: 510.814453125
+percent_active_slices: 55.47264665365219
+proxy_compute: 54689.2265625
+train_time: 690.1106457710266

@@ -1,0 +1,392 @@
+=== Job started at Wed Apr 16 00:33:45 CDT 2025 ===
+Running on node: g051
+ssh -N -L 8787:g051:8787 aaupadhy@grace.hprc.tamu.edu
+=== Starting experimentation at Wed Apr 16 00:34:37 CDT 2025 ===
+2025-04-16 01:05:49,210 - INFO - Starting ablation study
+2025-04-16 01:05:49,318 - INFO - Using config file: experiments/configs/ablation.yml
+2025-04-16 01:05:49,319 - INFO - Output directory: outputs
+2025-04-16 01:06:27,898 - INFO - Using device: cuda
+2025-04-16 01:06:27,899 - INFO - Loading cifar10 dataset...
+2025-04-16 01:15:43,319 - INFO - Loading mnist dataset...
+2025-04-16 01:22:20,862 - INFO - Loading ag_news dataset...
+2025-04-16 01:25:15,230 - INFO - Loading imdb dataset...
+2025-04-16 01:26:11,876 - INFO - 
+=== Running experiments on cifar10 dataset ===
+2025-04-16 01:26:11,877 - INFO - 
+Running NdLinear_cifar10
+2025-04-16 01:58:26,189 - INFO - Epoch 1/10 - Train Acc: 28.22%, Test Acc: 30.49% | 
+2025-04-16 02:00:26,421 - INFO - Epoch 2/10 - Train Acc: 34.63%, Test Acc: 35.47% | 
+2025-04-16 02:01:54,782 - INFO - Epoch 3/10 - Train Acc: 39.42%, Test Acc: 38.56% | 
+2025-04-16 02:03:23,066 - INFO - Epoch 4/10 - Train Acc: 41.28%, Test Acc: 39.96% | 
+2025-04-16 02:04:51,740 - INFO - Epoch 5/10 - Train Acc: 42.15%, Test Acc: 40.75% | 
+2025-04-16 02:06:19,951 - INFO - Epoch 6/10 - Train Acc: 42.80%, Test Acc: 40.27% | 
+2025-04-16 02:07:48,176 - INFO - Epoch 7/10 - Train Acc: 43.03%, Test Acc: 40.22% | 
+2025-04-16 02:09:16,258 - INFO - Epoch 8/10 - Train Acc: 43.56%, Test Acc: 40.48% | 
+2025-04-16 02:10:46,958 - INFO - Epoch 9/10 - Train Acc: 43.69%, Test Acc: 40.43% | 
+2025-04-16 02:12:15,103 - INFO - Epoch 10/10 - Train Acc: 43.93%, Test Acc: 39.64% | 
+2025-04-16 02:12:41,049 - INFO - 
+Running NdLinearGated_soft_all_16_cifar10
+2025-04-16 02:14:20,716 - INFO - Epoch 1/10 - Train Acc: 29.77%, Test Acc: 35.18% | Gate Entropy: 0.9923, Active Gates: 0.51
+2025-04-16 02:15:53,444 - INFO - Epoch 2/10 - Train Acc: 36.63%, Test Acc: 38.96% | Gate Entropy: 0.9829, Active Gates: 0.49
+2025-04-16 02:17:22,838 - INFO - Epoch 3/10 - Train Acc: 40.40%, Test Acc: 41.23% | Gate Entropy: 0.9838, Active Gates: 0.46
+2025-04-16 02:18:53,411 - INFO - Epoch 4/10 - Train Acc: 41.87%, Test Acc: 41.41% | Gate Entropy: 0.9839, Active Gates: 0.47
+2025-04-16 02:20:23,345 - INFO - Epoch 5/10 - Train Acc: 42.43%, Test Acc: 41.52% | Gate Entropy: 0.9893, Active Gates: 0.49
+2025-04-16 02:21:53,559 - INFO - Epoch 6/10 - Train Acc: 42.77%, Test Acc: 41.34% | Gate Entropy: 0.9924, Active Gates: 0.46
+2025-04-16 02:23:22,584 - INFO - Epoch 7/10 - Train Acc: 43.00%, Test Acc: 42.00% | Gate Entropy: 0.9919, Active Gates: 0.45
+2025-04-16 02:24:52,331 - INFO - Epoch 8/10 - Train Acc: 43.26%, Test Acc: 40.90% | Gate Entropy: 0.9879, Active Gates: 0.48
+2025-04-16 02:26:21,384 - INFO - Epoch 9/10 - Train Acc: 43.28%, Test Acc: 40.94% | Gate Entropy: 0.9901, Active Gates: 0.47
+2025-04-16 02:27:50,617 - INFO - Epoch 10/10 - Train Acc: 43.61%, Test Acc: 40.77% | Gate Entropy: 0.9858, Active Gates: 0.47
+2025-04-16 02:27:55,252 - INFO - 
+Running NdLinearGated_hard_all_16_cifar10
+2025-04-16 02:29:25,243 - INFO - Epoch 1/10 - Train Acc: 29.19%, Test Acc: 28.21% | Gate Entropy: 0.9759, Active Gates: 0.67
+2025-04-16 02:30:57,435 - INFO - Epoch 2/10 - Train Acc: 35.78%, Test Acc: 38.52% | Gate Entropy: 0.9865, Active Gates: 0.67
+2025-04-16 02:32:26,357 - INFO - Epoch 3/10 - Train Acc: 39.76%, Test Acc: 40.14% | Gate Entropy: 0.9890, Active Gates: 1.00
+2025-04-16 02:33:59,429 - INFO - Epoch 4/10 - Train Acc: 42.07%, Test Acc: 40.43% | Gate Entropy: 0.9729, Active Gates: 0.00
+2025-04-16 02:35:28,490 - INFO - Epoch 5/10 - Train Acc: 42.53%, Test Acc: 41.05% | Gate Entropy: 0.9816, Active Gates: 0.33
+2025-04-16 02:37:03,923 - INFO - Epoch 6/10 - Train Acc: 43.13%, Test Acc: 40.75% | Gate Entropy: 0.9887, Active Gates: 1.00
+2025-04-16 02:38:33,015 - INFO - Epoch 7/10 - Train Acc: 43.30%, Test Acc: 41.20% | Gate Entropy: 0.9875, Active Gates: 0.33
+2025-04-16 02:40:02,615 - INFO - Epoch 8/10 - Train Acc: 43.61%, Test Acc: 40.52% | Gate Entropy: 0.9967, Active Gates: 0.67
+2025-04-16 02:41:32,050 - INFO - Epoch 9/10 - Train Acc: 43.92%, Test Acc: 40.82% | Gate Entropy: 0.9860, Active Gates: 1.00
+2025-04-16 02:43:01,135 - INFO - Epoch 10/10 - Train Acc: 44.17%, Test Acc: 40.28% | Gate Entropy: 0.9950, Active Gates: 0.33
+2025-04-16 02:43:04,076 - INFO - 
+Running NdLinearGated_soft_all_4_cifar10
+2025-04-16 02:44:33,492 - INFO - Epoch 1/10 - Train Acc: 30.22%, Test Acc: 33.50% | Gate Entropy: 0.9784, Active Gates: 0.46
+2025-04-16 02:46:04,360 - INFO - Epoch 2/10 - Train Acc: 36.99%, Test Acc: 37.66% | Gate Entropy: 0.9922, Active Gates: 0.43
+2025-04-16 02:47:33,846 - INFO - Epoch 3/10 - Train Acc: 40.92%, Test Acc: 41.60% | Gate Entropy: 0.9903, Active Gates: 0.43
+2025-04-16 02:49:05,133 - INFO - Epoch 4/10 - Train Acc: 42.04%, Test Acc: 41.37% | Gate Entropy: 0.9857, Active Gates: 0.45
+2025-04-16 02:50:34,404 - INFO - Epoch 5/10 - Train Acc: 42.67%, Test Acc: 41.58% | Gate Entropy: 0.9862, Active Gates: 0.46
+2025-04-16 02:52:03,766 - INFO - Epoch 6/10 - Train Acc: 42.76%, Test Acc: 41.49% | Gate Entropy: 0.9837, Active Gates: 0.42
+2025-04-16 02:53:33,153 - INFO - Epoch 7/10 - Train Acc: 43.07%, Test Acc: 40.71% | Gate Entropy: 0.9876, Active Gates: 0.45
+2025-04-16 02:55:02,597 - INFO - Epoch 8/10 - Train Acc: 43.40%, Test Acc: 40.84% | Gate Entropy: 0.9839, Active Gates: 0.43
+2025-04-16 02:56:32,052 - INFO - Epoch 9/10 - Train Acc: 43.56%, Test Acc: 41.10% | Gate Entropy: 0.9810, Active Gates: 0.43
+2025-04-16 02:58:01,475 - INFO - Epoch 10/10 - Train Acc: 43.49%, Test Acc: 41.00% | Gate Entropy: 0.9790, Active Gates: 0.45
+2025-04-16 02:58:02,703 - INFO - 
+Running NdLinearGated_soft_all_64_cifar10
+2025-04-16 02:59:31,996 - INFO - Epoch 1/10 - Train Acc: 28.99%, Test Acc: 32.90% | Gate Entropy: 0.9795, Active Gates: 0.49
+2025-04-16 03:01:02,535 - INFO - Epoch 2/10 - Train Acc: 36.99%, Test Acc: 36.77% | Gate Entropy: 0.9959, Active Gates: 0.49
+2025-04-16 03:02:31,587 - INFO - Epoch 3/10 - Train Acc: 40.17%, Test Acc: 40.67% | Gate Entropy: 0.9949, Active Gates: 0.48
+2025-04-16 03:09:09,469 - INFO - Epoch 4/10 - Train Acc: 41.60%, Test Acc: 41.01% | Gate Entropy: 0.9950, Active Gates: 0.50
+2025-04-16 03:13:50,660 - INFO - Epoch 5/10 - Train Acc: 42.34%, Test Acc: 41.20% | Gate Entropy: 0.9967, Active Gates: 0.48
+2025-04-16 03:15:21,080 - INFO - Epoch 6/10 - Train Acc: 42.35%, Test Acc: 40.98% | Gate Entropy: 0.9954, Active Gates: 0.49
+2025-04-16 03:16:50,294 - INFO - Epoch 7/10 - Train Acc: 42.97%, Test Acc: 41.80% | Gate Entropy: 0.9989, Active Gates: 0.52
+2025-04-16 03:18:30,529 - INFO - Epoch 8/10 - Train Acc: 43.05%, Test Acc: 41.53% | Gate Entropy: 0.9970, Active Gates: 0.51
+2025-04-16 03:20:00,004 - INFO - Epoch 9/10 - Train Acc: 43.35%, Test Acc: 41.00% | Gate Entropy: 0.9963, Active Gates: 0.49
+2025-04-16 03:21:28,885 - INFO - Epoch 10/10 - Train Acc: 43.54%, Test Acc: 41.31% | Gate Entropy: 0.9941, Active Gates: 0.51
+2025-04-16 03:21:35,527 - INFO - 
+Running NdLinearGated_soft_first_16_cifar10
+2025-04-16 03:23:05,493 - INFO - Epoch 1/10 - Train Acc: 28.96%, Test Acc: 33.87% | Gate Entropy: 0.9842, Active Gates: 0.55
+2025-04-16 03:24:42,042 - INFO - Epoch 2/10 - Train Acc: 35.21%, Test Acc: 37.76% | Gate Entropy: 0.9831, Active Gates: 0.55
+2025-04-16 03:26:10,150 - INFO - Epoch 3/10 - Train Acc: 39.49%, Test Acc: 40.66% | Gate Entropy: 0.9499, Active Gates: 0.58
+2025-04-16 03:27:39,947 - INFO - Epoch 4/10 - Train Acc: 42.00%, Test Acc: 40.37% | Gate Entropy: 0.9823, Active Gates: 0.60
+2025-04-16 03:29:08,220 - INFO - Epoch 5/10 - Train Acc: 42.56%, Test Acc: 40.97% | Gate Entropy: 0.9920, Active Gates: 0.54
+2025-04-16 03:30:37,566 - INFO - Epoch 6/10 - Train Acc: 42.98%, Test Acc: 41.49% | Gate Entropy: 0.9945, Active Gates: 0.54
+2025-04-16 03:32:06,028 - INFO - Epoch 7/10 - Train Acc: 43.40%, Test Acc: 40.85% | Gate Entropy: 0.9836, Active Gates: 0.56
+2025-04-16 03:33:34,650 - INFO - Epoch 8/10 - Train Acc: 43.64%, Test Acc: 41.19% | Gate Entropy: 0.9792, Active Gates: 0.55
+2025-04-16 03:35:03,135 - INFO - Epoch 9/10 - Train Acc: 43.77%, Test Acc: 41.37% | Gate Entropy: 0.9553, Active Gates: 0.56
+2025-04-16 03:36:31,618 - INFO - Epoch 10/10 - Train Acc: 44.02%, Test Acc: 40.89% | Gate Entropy: 0.9955, Active Gates: 0.60
+2025-04-16 03:36:32,392 - INFO - 
+Running NdLinearGated_soft_topk_16_cifar10
+2025-04-16 03:38:01,590 - INFO - Epoch 1/10 - Train Acc: 31.08%, Test Acc: 38.96% | Gate Entropy: 0.9358, Active Gates: 0.47
+2025-04-16 03:39:31,555 - INFO - Epoch 2/10 - Train Acc: 38.48%, Test Acc: 40.91% | Gate Entropy: 0.9471, Active Gates: 0.48
+2025-04-16 03:41:00,499 - INFO - Epoch 3/10 - Train Acc: 41.71%, Test Acc: 41.21% | Gate Entropy: 0.8687, Active Gates: 0.47
+2025-04-16 03:42:30,501 - INFO - Epoch 4/10 - Train Acc: 42.50%, Test Acc: 40.73% | Gate Entropy: 0.9801, Active Gates: 0.46
+2025-04-16 03:43:59,551 - INFO - Epoch 5/10 - Train Acc: 42.81%, Test Acc: 41.35% | Gate Entropy: 0.9664, Active Gates: 0.45
+2025-04-16 03:45:29,357 - INFO - Epoch 6/10 - Train Acc: 43.02%, Test Acc: 40.89% | Gate Entropy: 0.9724, Active Gates: 0.49
+2025-04-16 03:46:58,364 - INFO - Epoch 7/10 - Train Acc: 43.38%, Test Acc: 41.41% | Gate Entropy: 0.9611, Active Gates: 0.51
+2025-04-16 03:48:28,511 - INFO - Epoch 8/10 - Train Acc: 43.63%, Test Acc: 40.97% | Gate Entropy: 0.9504, Active Gates: 0.46
+2025-04-16 03:49:58,848 - INFO - Epoch 9/10 - Train Acc: 43.69%, Test Acc: 40.97% | Gate Entropy: 0.9786, Active Gates: 0.49
+2025-04-16 03:51:27,851 - INFO - Epoch 10/10 - Train Acc: 43.81%, Test Acc: 40.77% | Gate Entropy: 0.9575, Active Gates: 0.47
+2025-04-16 03:51:28,841 - INFO - Preparing to plot proxy compute vs accuracy for cifar10
+2025-04-16 03:51:28,841 - INFO - Number of models: 7
+2025-04-16 03:51:28,841 - INFO - Generating proxy compute vs accuracy plot for cifar10
+2025-04-16 03:51:28,842 - INFO - Model names: ['NdLinear', 'NdLinearGated_soft_all_16', 'NdLinearGated_hard_all_16', 'NdLinearGated_soft_all_4', 'NdLinearGated_soft_all_64', 'NdLinearGated_soft_first_16', 'NdLinearGated_soft_topk_16']
+2025-04-16 03:51:28,842 - INFO - Proxy computes: [4144, 1802.6474885940552, 4144.0, 1754.1047768592834, 2219.956398010254, 2502.3336629867554, 2195.400583267212]
+2025-04-16 03:51:28,842 - INFO - Accuracies: [40.75, 42.0, 41.2, 41.6, 41.8, 41.49, 41.41]
+2025-04-16 03:51:31,616 - INFO - Plot saved to outputs/plots/models_cifar10_proxy_compute_vs_accuracy.png and outputs/cifar10/plots/models_proxy_compute_vs_accuracy.png
+2025-04-16 03:51:31,617 - INFO - 
+=== Running experiments on mnist dataset ===
+2025-04-16 03:51:31,617 - INFO - 
+Running NdLinear_mnist
+2025-04-16 04:02:19,937 - INFO - Epoch 1/10 - Train Acc: 82.40%, Test Acc: 88.80% | 
+2025-04-16 04:02:52,268 - INFO - Epoch 2/10 - Train Acc: 86.66%, Test Acc: 83.43% | 
+2025-04-16 04:03:24,557 - INFO - Epoch 3/10 - Train Acc: 87.89%, Test Acc: 88.34% | 
+2025-04-16 04:03:57,163 - INFO - Epoch 4/10 - Train Acc: 88.99%, Test Acc: 89.64% | 
+2025-04-16 04:04:29,460 - INFO - Epoch 5/10 - Train Acc: 90.25%, Test Acc: 90.92% | 
+2025-04-16 04:05:01,790 - INFO - Epoch 6/10 - Train Acc: 91.44%, Test Acc: 91.15% | 
+2025-04-16 04:05:34,078 - INFO - Epoch 7/10 - Train Acc: 91.92%, Test Acc: 91.89% | 
+2025-04-16 04:06:06,363 - INFO - Epoch 8/10 - Train Acc: 91.95%, Test Acc: 92.22% | 
+2025-04-16 04:06:38,700 - INFO - Epoch 9/10 - Train Acc: 92.02%, Test Acc: 92.03% | 
+2025-04-16 04:07:11,027 - INFO - Epoch 10/10 - Train Acc: 92.24%, Test Acc: 92.00% | 
+2025-04-16 04:07:11,685 - INFO - 
+Running NdLinearGated_soft_all_16_mnist
+2025-04-16 04:07:46,755 - INFO - Epoch 1/10 - Train Acc: 80.44%, Test Acc: 89.79% | Gate Entropy: 0.9764, Active Gates: 0.56
+2025-04-16 04:08:22,447 - INFO - Epoch 2/10 - Train Acc: 87.77%, Test Acc: 89.97% | Gate Entropy: 0.9660, Active Gates: 0.59
+2025-04-16 04:08:56,407 - INFO - Epoch 3/10 - Train Acc: 88.56%, Test Acc: 91.29% | Gate Entropy: 0.9676, Active Gates: 0.58
+2025-04-16 04:09:30,972 - INFO - Epoch 4/10 - Train Acc: 90.01%, Test Acc: 91.12% | Gate Entropy: 0.9313, Active Gates: 0.57
+2025-04-16 04:10:04,751 - INFO - Epoch 5/10 - Train Acc: 91.29%, Test Acc: 92.32% | Gate Entropy: 0.9943, Active Gates: 0.55
+2025-04-16 04:10:39,316 - INFO - Epoch 6/10 - Train Acc: 91.81%, Test Acc: 91.68% | Gate Entropy: 0.9864, Active Gates: 0.60
+2025-04-16 04:11:13,049 - INFO - Epoch 7/10 - Train Acc: 91.82%, Test Acc: 92.03% | Gate Entropy: 0.9836, Active Gates: 0.56
+2025-04-16 04:11:46,788 - INFO - Epoch 8/10 - Train Acc: 91.86%, Test Acc: 91.98% | Gate Entropy: 0.9856, Active Gates: 0.54
+2025-04-16 04:12:20,519 - INFO - Epoch 9/10 - Train Acc: 91.89%, Test Acc: 91.82% | Gate Entropy: 0.9791, Active Gates: 0.59
+2025-04-16 04:12:54,252 - INFO - Epoch 10/10 - Train Acc: 91.89%, Test Acc: 92.39% | Gate Entropy: 0.9899, Active Gates: 0.51
+2025-04-16 04:12:54,889 - INFO - 
+Running NdLinearGated_hard_all_16_mnist
+2025-04-16 04:13:28,584 - INFO - Epoch 1/10 - Train Acc: 79.76%, Test Acc: 87.29% | Gate Entropy: 0.9890, Active Gates: 0.33
+2025-04-16 04:14:02,518 - INFO - Epoch 2/10 - Train Acc: 85.30%, Test Acc: 84.65% | Gate Entropy: 0.9941, Active Gates: 0.33
+2025-04-16 04:16:56,627 - INFO - Epoch 3/10 - Train Acc: 86.62%, Test Acc: 86.42% | Gate Entropy: 0.9945, Active Gates: 0.00
+2025-04-16 04:17:31,767 - INFO - Epoch 4/10 - Train Acc: 87.48%, Test Acc: 90.63% | Gate Entropy: 0.9967, Active Gates: 0.00
+2025-04-16 04:18:04,982 - INFO - Epoch 5/10 - Train Acc: 88.50%, Test Acc: 87.64% | Gate Entropy: 0.9905, Active Gates: 0.67
+2025-04-16 04:19:47,964 - INFO - Epoch 6/10 - Train Acc: 89.63%, Test Acc: 90.96% | Gate Entropy: 0.9930, Active Gates: 0.00
+2025-04-16 04:21:26,059 - INFO - Epoch 7/10 - Train Acc: 91.13%, Test Acc: 90.97% | Gate Entropy: 0.9876, Active Gates: 0.00
+2025-04-16 04:22:00,398 - INFO - Epoch 8/10 - Train Acc: 91.80%, Test Acc: 91.53% | Gate Entropy: 0.9937, Active Gates: 0.33
+2025-04-16 04:22:33,564 - INFO - Epoch 9/10 - Train Acc: 92.02%, Test Acc: 91.40% | Gate Entropy: 0.9926, Active Gates: 0.33
+2025-04-16 04:23:07,008 - INFO - Epoch 10/10 - Train Acc: 92.05%, Test Acc: 91.83% | Gate Entropy: 0.9944, Active Gates: 0.00
+2025-04-16 04:23:07,810 - INFO - 
+Running NdLinearGated_soft_all_4_mnist
+2025-04-16 04:23:41,627 - INFO - Epoch 1/10 - Train Acc: 80.36%, Test Acc: 88.36% | Gate Entropy: 0.9892, Active Gates: 0.46
+2025-04-16 04:24:16,254 - INFO - Epoch 2/10 - Train Acc: 87.74%, Test Acc: 89.17% | Gate Entropy: 0.9903, Active Gates: 0.45
+2025-04-16 04:24:49,980 - INFO - Epoch 3/10 - Train Acc: 88.26%, Test Acc: 87.34% | Gate Entropy: 0.9890, Active Gates: 0.45
+2025-04-16 04:25:23,714 - INFO - Epoch 4/10 - Train Acc: 88.84%, Test Acc: 84.94% | Gate Entropy: 0.9886, Active Gates: 0.45
+2025-04-16 04:25:57,430 - INFO - Epoch 5/10 - Train Acc: 89.94%, Test Acc: 90.37% | Gate Entropy: 0.9894, Active Gates: 0.47
+2025-04-16 04:26:31,954 - INFO - Epoch 6/10 - Train Acc: 90.77%, Test Acc: 91.99% | Gate Entropy: 0.9890, Active Gates: 0.41
+2025-04-16 04:27:07,444 - INFO - Epoch 7/10 - Train Acc: 91.49%, Test Acc: 91.48% | Gate Entropy: 0.9870, Active Gates: 0.46
+2025-04-16 04:27:41,143 - INFO - Epoch 8/10 - Train Acc: 91.85%, Test Acc: 92.13% | Gate Entropy: 0.9885, Active Gates: 0.45
+2025-04-16 04:28:16,080 - INFO - Epoch 9/10 - Train Acc: 92.13%, Test Acc: 91.87% | Gate Entropy: 0.9885, Active Gates: 0.44
+2025-04-16 04:28:50,572 - INFO - Epoch 10/10 - Train Acc: 92.07%, Test Acc: 92.18% | Gate Entropy: 0.9885, Active Gates: 0.45
+2025-04-16 04:28:52,037 - INFO - 
+Running NdLinearGated_soft_all_64_mnist
+2025-04-16 04:29:25,866 - INFO - Epoch 1/10 - Train Acc: 81.80%, Test Acc: 89.81% | Gate Entropy: 0.9855, Active Gates: 0.52
+2025-04-16 04:30:03,983 - INFO - Epoch 2/10 - Train Acc: 87.74%, Test Acc: 90.45% | Gate Entropy: 0.9800, Active Gates: 0.51
+2025-04-16 04:30:37,581 - INFO - Epoch 3/10 - Train Acc: 88.42%, Test Acc: 89.39% | Gate Entropy: 0.9900, Active Gates: 0.54
+2025-04-16 04:31:11,144 - INFO - Epoch 4/10 - Train Acc: 88.94%, Test Acc: 90.26% | Gate Entropy: 0.9879, Active Gates: 0.54
+2025-04-16 04:31:44,752 - INFO - Epoch 5/10 - Train Acc: 89.91%, Test Acc: 87.94% | Gate Entropy: 0.9839, Active Gates: 0.50
+2025-04-16 04:32:18,349 - INFO - Epoch 6/10 - Train Acc: 90.85%, Test Acc: 91.20% | Gate Entropy: 0.9957, Active Gates: 0.51
+2025-04-16 04:32:51,957 - INFO - Epoch 7/10 - Train Acc: 91.33%, Test Acc: 90.90% | Gate Entropy: 0.9969, Active Gates: 0.50
+2025-04-16 04:33:25,572 - INFO - Epoch 8/10 - Train Acc: 91.80%, Test Acc: 91.96% | Gate Entropy: 0.9927, Active Gates: 0.52
+2025-04-16 04:33:59,175 - INFO - Epoch 9/10 - Train Acc: 92.02%, Test Acc: 92.26% | Gate Entropy: 0.9927, Active Gates: 0.51
+2025-04-16 04:34:33,661 - INFO - Epoch 10/10 - Train Acc: 92.15%, Test Acc: 91.83% | Gate Entropy: 0.9952, Active Gates: 0.52
+2025-04-16 04:34:34,353 - INFO - 
+Running NdLinearGated_soft_first_16_mnist
+2025-04-16 04:35:07,069 - INFO - Epoch 1/10 - Train Acc: 82.03%, Test Acc: 89.60% | Gate Entropy: 0.9965, Active Gates: 0.51
+2025-04-16 04:35:40,623 - INFO - Epoch 2/10 - Train Acc: 86.52%, Test Acc: 85.78% | Gate Entropy: 0.9939, Active Gates: 0.53
+2025-04-16 04:36:13,358 - INFO - Epoch 3/10 - Train Acc: 88.15%, Test Acc: 89.96% | Gate Entropy: 0.9729, Active Gates: 0.51
+2025-04-16 04:36:46,800 - INFO - Epoch 4/10 - Train Acc: 88.23%, Test Acc: 90.55% | Gate Entropy: 0.9948, Active Gates: 0.53
+2025-04-16 04:37:19,518 - INFO - Epoch 5/10 - Train Acc: 89.93%, Test Acc: 91.30% | Gate Entropy: 0.9914, Active Gates: 0.55
+2025-04-16 04:37:53,003 - INFO - Epoch 6/10 - Train Acc: 90.72%, Test Acc: 91.21% | Gate Entropy: 0.9934, Active Gates: 0.53
+2025-04-16 04:38:25,680 - INFO - Epoch 7/10 - Train Acc: 91.52%, Test Acc: 91.65% | Gate Entropy: 0.9956, Active Gates: 0.53
+2025-04-16 04:38:59,177 - INFO - Epoch 8/10 - Train Acc: 91.89%, Test Acc: 91.61% | Gate Entropy: 0.9963, Active Gates: 0.53
+2025-04-16 04:39:32,170 - INFO - Epoch 9/10 - Train Acc: 92.03%, Test Acc: 92.03% | Gate Entropy: 0.9961, Active Gates: 0.54
+2025-04-16 04:40:05,648 - INFO - Epoch 10/10 - Train Acc: 92.04%, Test Acc: 91.84% | Gate Entropy: 0.9955, Active Gates: 0.52
+2025-04-16 04:40:06,283 - INFO - 
+Running NdLinearGated_soft_topk_16_mnist
+/scratch/user/aaupadhy/college/projects/NdLinearGated/ndlinear/modules/ndlinear_gated.py:55: UserWarning: std(): degrees of freedom is <= 0. Correction should be strictly less than the reduction factor (input numel divided by output numel). (Triggered internally at /pytorch/aten/src/ATen/native/ReduceOps.cpp:1831.)
+  mode_stds.append(X_mean.std().item())
+2025-04-16 04:40:40,148 - INFO - Epoch 1/10 - Train Acc: 79.32%, Test Acc: 85.73% | Gate Entropy: 0.9963, Active Gates: 0.47
+2025-04-16 04:41:14,053 - INFO - Epoch 2/10 - Train Acc: 86.09%, Test Acc: 90.60% | Gate Entropy: 0.9959, Active Gates: 0.49
+2025-04-16 04:41:47,131 - INFO - Epoch 3/10 - Train Acc: 86.87%, Test Acc: 84.92% | Gate Entropy: 0.9932, Active Gates: 0.48
+2025-04-16 04:42:20,206 - INFO - Epoch 4/10 - Train Acc: 87.78%, Test Acc: 84.08% | Gate Entropy: 0.9970, Active Gates: 0.51
+2025-04-16 04:42:53,275 - INFO - Epoch 5/10 - Train Acc: 89.60%, Test Acc: 90.24% | Gate Entropy: 0.9964, Active Gates: 0.49
+2025-04-16 04:43:27,384 - INFO - Epoch 6/10 - Train Acc: 90.48%, Test Acc: 91.35% | Gate Entropy: 0.9925, Active Gates: 0.49
+2025-04-16 04:44:00,554 - INFO - Epoch 7/10 - Train Acc: 91.44%, Test Acc: 91.74% | Gate Entropy: 0.9849, Active Gates: 0.45
+2025-04-16 04:44:34,912 - INFO - Epoch 8/10 - Train Acc: 91.86%, Test Acc: 91.76% | Gate Entropy: 0.9873, Active Gates: 0.47
+2025-04-16 04:45:08,082 - INFO - Epoch 9/10 - Train Acc: 91.92%, Test Acc: 92.11% | Gate Entropy: 0.9867, Active Gates: 0.47
+2025-04-16 04:45:42,113 - INFO - Epoch 10/10 - Train Acc: 91.98%, Test Acc: 91.85% | Gate Entropy: 0.9784, Active Gates: 0.47
+2025-04-16 04:45:42,777 - INFO - Preparing to plot proxy compute vs accuracy for mnist
+2025-04-16 04:45:42,778 - INFO - Number of models: 7
+2025-04-16 04:45:42,778 - INFO - Generating proxy compute vs accuracy plot for mnist
+2025-04-16 04:45:42,778 - INFO - Model names: ['NdLinear', 'NdLinearGated_soft_all_16', 'NdLinearGated_hard_all_16', 'NdLinearGated_soft_all_4', 'NdLinearGated_soft_all_64', 'NdLinearGated_soft_first_16', 'NdLinearGated_soft_topk_16']
+2025-04-16 04:45:42,778 - INFO - Proxy computes: [3600, 2006.90731716156, 1792.0, 1652.2867884635925, 1825.874779701233, 1814.5530853271484, 1710.3054084777832]
+2025-04-16 04:45:42,778 - INFO - Accuracies: [92.22, 92.39, 91.83, 92.18, 92.26, 92.03, 92.11]
+2025-04-16 04:45:43,450 - INFO - Plot saved to outputs/plots/models_mnist_proxy_compute_vs_accuracy.png and outputs/mnist/plots/models_proxy_compute_vs_accuracy.png
+2025-04-16 04:45:43,450 - INFO - 
+=== Running experiments on ag_news dataset ===
+2025-04-16 04:45:43,450 - INFO - 
+Running NdLinear_ag_news
+2025-04-16 04:47:10,861 - INFO - Epoch 1/10 - Train Acc: 82.62%, Test Acc: 88.70% | 
+2025-04-16 04:48:16,769 - INFO - Epoch 2/10 - Train Acc: 88.70%, Test Acc: 87.58% | 
+2025-04-16 04:49:23,071 - INFO - Epoch 3/10 - Train Acc: 89.26%, Test Acc: 88.54% | 
+2025-04-16 04:50:29,266 - INFO - Epoch 4/10 - Train Acc: 89.69%, Test Acc: 89.16% | 
+2025-04-16 04:51:35,417 - INFO - Epoch 5/10 - Train Acc: 90.12%, Test Acc: 89.92% | 
+2025-04-16 04:52:41,817 - INFO - Epoch 6/10 - Train Acc: 90.60%, Test Acc: 88.63% | 
+2025-04-16 04:53:48,208 - INFO - Epoch 7/10 - Train Acc: 91.03%, Test Acc: 89.47% | 
+2025-04-16 04:54:54,287 - INFO - Epoch 8/10 - Train Acc: 91.45%, Test Acc: 90.38% | 
+2025-04-16 04:56:00,451 - INFO - Epoch 9/10 - Train Acc: 91.84%, Test Acc: 90.70% | 
+2025-04-16 04:57:06,904 - INFO - Epoch 10/10 - Train Acc: 92.16%, Test Acc: 90.11% | 
+2025-04-16 04:57:07,998 - INFO - 
+Running NdLinearGated_soft_all_16_ag_news
+2025-04-16 04:58:18,121 - INFO - Epoch 1/10 - Train Acc: 79.93%, Test Acc: 86.70% | Gate Entropy: 0.9957, Active Gates: 0.55
+2025-04-16 04:59:28,489 - INFO - Epoch 2/10 - Train Acc: 88.67%, Test Acc: 88.04% | Gate Entropy: 0.9978, Active Gates: 0.51
+2025-04-16 05:00:37,815 - INFO - Epoch 3/10 - Train Acc: 89.47%, Test Acc: 88.32% | Gate Entropy: 0.9961, Active Gates: 0.52
+2025-04-16 05:01:48,216 - INFO - Epoch 4/10 - Train Acc: 89.79%, Test Acc: 89.64% | Gate Entropy: 0.9913, Active Gates: 0.53
+2025-04-16 05:02:57,732 - INFO - Epoch 5/10 - Train Acc: 90.26%, Test Acc: 89.05% | Gate Entropy: 0.9784, Active Gates: 0.56
+2025-04-16 05:04:07,060 - INFO - Epoch 6/10 - Train Acc: 90.83%, Test Acc: 89.53% | Gate Entropy: 0.9675, Active Gates: 0.59
+2025-04-16 05:05:16,209 - INFO - Epoch 7/10 - Train Acc: 91.32%, Test Acc: 90.34% | Gate Entropy: 0.8852, Active Gates: 0.67
+2025-04-16 05:06:26,142 - INFO - Epoch 8/10 - Train Acc: 91.70%, Test Acc: 90.66% | Gate Entropy: 0.9440, Active Gates: 0.64
+2025-04-16 05:07:37,582 - INFO - Epoch 9/10 - Train Acc: 92.17%, Test Acc: 90.57% | Gate Entropy: 0.9347, Active Gates: 0.61
+2025-04-16 05:08:46,879 - INFO - Epoch 10/10 - Train Acc: 92.54%, Test Acc: 90.58% | Gate Entropy: 0.8146, Active Gates: 0.64
+2025-04-16 05:08:47,574 - INFO - 
+Running NdLinearGated_hard_all_16_ag_news
+2025-04-16 05:09:56,875 - INFO - Epoch 1/10 - Train Acc: 82.36%, Test Acc: 88.39% | Gate Entropy: 0.9664, Active Gates: 1.00
+2025-04-16 05:11:07,408 - INFO - Epoch 2/10 - Train Acc: 88.72%, Test Acc: 87.92% | Gate Entropy: 0.9913, Active Gates: 0.50
+2025-04-16 05:12:15,878 - INFO - Epoch 3/10 - Train Acc: 89.23%, Test Acc: 89.49% | Gate Entropy: 0.9931, Active Gates: 1.00
+2025-04-16 05:13:25,136 - INFO - Epoch 4/10 - Train Acc: 89.69%, Test Acc: 89.28% | Gate Entropy: 0.9863, Active Gates: 1.00
+2025-04-16 05:14:33,569 - INFO - Epoch 5/10 - Train Acc: 90.19%, Test Acc: 89.46% | Gate Entropy: 0.9912, Active Gates: 0.50
+2025-04-16 05:15:42,515 - INFO - Epoch 6/10 - Train Acc: 90.45%, Test Acc: 89.96% | Gate Entropy: 0.9860, Active Gates: 1.00
+2025-04-16 05:16:50,897 - INFO - Epoch 7/10 - Train Acc: 90.96%, Test Acc: 90.22% | Gate Entropy: 0.9721, Active Gates: 1.00
+2025-04-16 05:17:59,953 - INFO - Epoch 8/10 - Train Acc: 91.49%, Test Acc: 89.91% | Gate Entropy: 0.9905, Active Gates: 1.00
+2025-04-16 05:19:08,233 - INFO - Epoch 9/10 - Train Acc: 91.77%, Test Acc: 90.87% | Gate Entropy: 0.9734, Active Gates: 1.00
+2025-04-16 05:20:17,458 - INFO - Epoch 10/10 - Train Acc: 92.08%, Test Acc: 90.39% | Gate Entropy: 0.9761, Active Gates: 1.00
+2025-04-16 05:20:18,153 - INFO - 
+Running NdLinearGated_soft_all_4_ag_news
+2025-04-16 05:21:27,889 - INFO - Epoch 1/10 - Train Acc: 82.84%, Test Acc: 87.95% | Gate Entropy: 0.9760, Active Gates: 0.59
+2025-04-16 05:22:43,698 - INFO - Epoch 2/10 - Train Acc: 88.67%, Test Acc: 88.62% | Gate Entropy: 0.9700, Active Gates: 0.60
+2025-04-16 05:23:54,722 - INFO - Epoch 3/10 - Train Acc: 89.21%, Test Acc: 89.00% | Gate Entropy: 0.9516, Active Gates: 0.62
+2025-04-16 05:25:08,026 - INFO - Epoch 4/10 - Train Acc: 89.75%, Test Acc: 89.97% | Gate Entropy: 0.9198, Active Gates: 0.66
+2025-04-16 05:26:19,129 - INFO - Epoch 5/10 - Train Acc: 90.22%, Test Acc: 90.01% | Gate Entropy: 0.8883, Active Gates: 0.68
+2025-04-16 05:27:29,396 - INFO - Epoch 6/10 - Train Acc: 90.66%, Test Acc: 89.91% | Gate Entropy: 0.8646, Active Gates: 0.70
+2025-04-16 05:28:38,781 - INFO - Epoch 7/10 - Train Acc: 91.14%, Test Acc: 90.36% | Gate Entropy: 0.7683, Active Gates: 0.75
+2025-04-16 05:29:48,753 - INFO - Epoch 8/10 - Train Acc: 91.61%, Test Acc: 90.57% | Gate Entropy: 0.5980, Active Gates: 0.74
+2025-04-16 05:30:58,057 - INFO - Epoch 9/10 - Train Acc: 91.89%, Test Acc: 90.46% | Gate Entropy: 0.7956, Active Gates: 0.74
+2025-04-16 05:32:07,854 - INFO - Epoch 10/10 - Train Acc: 92.17%, Test Acc: 90.54% | Gate Entropy: 0.5402, Active Gates: 0.75
+2025-04-16 05:32:08,458 - INFO - 
+Running NdLinearGated_soft_all_64_ag_news
+2025-04-16 05:33:17,786 - INFO - Epoch 1/10 - Train Acc: 81.92%, Test Acc: 87.99% | Gate Entropy: 0.9863, Active Gates: 0.47
+2025-04-16 05:34:27,656 - INFO - Epoch 2/10 - Train Acc: 88.90%, Test Acc: 88.67% | Gate Entropy: 0.9951, Active Gates: 0.26
+2025-04-16 05:35:44,944 - INFO - Epoch 3/10 - Train Acc: 89.38%, Test Acc: 89.37% | Gate Entropy: 0.9418, Active Gates: 0.23
+2025-04-16 05:36:56,776 - INFO - Epoch 4/10 - Train Acc: 89.73%, Test Acc: 88.89% | Gate Entropy: 0.5910, Active Gates: 0.42
+2025-04-16 05:38:06,021 - INFO - Epoch 5/10 - Train Acc: 90.13%, Test Acc: 90.25% | Gate Entropy: 0.9816, Active Gates: 0.43
+2025-04-16 05:39:16,098 - INFO - Epoch 6/10 - Train Acc: 90.70%, Test Acc: 90.08% | Gate Entropy: 0.9315, Active Gates: 0.30
+2025-04-16 05:40:25,795 - INFO - Epoch 7/10 - Train Acc: 91.08%, Test Acc: 89.45% | Gate Entropy: 0.5050, Active Gates: 0.18
+2025-04-16 05:41:35,458 - INFO - Epoch 8/10 - Train Acc: 91.51%, Test Acc: 90.28% | Gate Entropy: 0.5163, Active Gates: 0.35
+2025-04-16 05:42:45,188 - INFO - Epoch 9/10 - Train Acc: 91.83%, Test Acc: 90.38% | Gate Entropy: 0.4761, Active Gates: 0.33
+2025-04-16 05:43:55,524 - INFO - Epoch 10/10 - Train Acc: 92.25%, Test Acc: 90.47% | Gate Entropy: 0.4211, Active Gates: 0.29
+2025-04-16 05:43:56,538 - INFO - 
+Running NdLinearGated_soft_first_16_ag_news
+2025-04-16 05:45:08,731 - INFO - Epoch 1/10 - Train Acc: 82.94%, Test Acc: 87.68% | Gate Entropy: 0.9716, Active Gates: 0.49
+2025-04-16 05:46:18,424 - INFO - Epoch 2/10 - Train Acc: 88.73%, Test Acc: 88.50% | Gate Entropy: 0.9923, Active Gates: 0.50
+2025-04-16 05:47:26,977 - INFO - Epoch 3/10 - Train Acc: 89.18%, Test Acc: 88.41% | Gate Entropy: 0.9824, Active Gates: 0.52
+2025-04-16 05:48:35,318 - INFO - Epoch 4/10 - Train Acc: 89.66%, Test Acc: 89.04% | Gate Entropy: 0.9845, Active Gates: 0.51
+2025-04-16 05:49:43,571 - INFO - Epoch 5/10 - Train Acc: 90.17%, Test Acc: 89.53% | Gate Entropy: 0.9846, Active Gates: 0.54
+2025-04-16 05:50:52,929 - INFO - Epoch 6/10 - Train Acc: 90.51%, Test Acc: 89.79% | Gate Entropy: 0.9842, Active Gates: 0.51
+2025-04-16 05:52:01,487 - INFO - Epoch 7/10 - Train Acc: 90.96%, Test Acc: 89.99% | Gate Entropy: 0.9344, Active Gates: 0.50
+2025-04-16 05:53:10,094 - INFO - Epoch 8/10 - Train Acc: 91.39%, Test Acc: 90.26% | Gate Entropy: 0.9672, Active Gates: 0.51
+2025-04-16 05:54:18,106 - INFO - Epoch 9/10 - Train Acc: 91.79%, Test Acc: 90.32% | Gate Entropy: 0.9541, Active Gates: 0.54
+2025-04-16 05:55:27,107 - INFO - Epoch 10/10 - Train Acc: 92.12%, Test Acc: 90.78% | Gate Entropy: 0.9275, Active Gates: 0.55
+2025-04-16 05:55:30,706 - INFO - 
+Running NdLinearGated_soft_topk_16_ag_news
+2025-04-16 05:56:40,570 - INFO - Epoch 1/10 - Train Acc: 82.66%, Test Acc: 87.20% | Gate Entropy: 0.9984, Active Gates: 0.50
+2025-04-16 05:57:51,448 - INFO - Epoch 2/10 - Train Acc: 88.72%, Test Acc: 88.36% | Gate Entropy: 0.9988, Active Gates: 0.51
+2025-04-16 05:59:01,348 - INFO - Epoch 3/10 - Train Acc: 89.12%, Test Acc: 89.01% | Gate Entropy: 0.9732, Active Gates: 0.50
+2025-04-16 06:00:11,983 - INFO - Epoch 4/10 - Train Acc: 89.59%, Test Acc: 89.76% | Gate Entropy: 0.9345, Active Gates: 0.44
+2025-04-16 06:01:21,567 - INFO - Epoch 5/10 - Train Acc: 90.09%, Test Acc: 89.67% | Gate Entropy: 0.9052, Active Gates: 0.47
+2025-04-16 06:02:31,194 - INFO - Epoch 6/10 - Train Acc: 90.57%, Test Acc: 90.16% | Gate Entropy: 0.8159, Active Gates: 0.32
+2025-04-16 06:03:40,794 - INFO - Epoch 7/10 - Train Acc: 90.96%, Test Acc: 90.46% | Gate Entropy: 0.9156, Active Gates: 0.44
+2025-04-16 06:04:51,356 - INFO - Epoch 8/10 - Train Acc: 91.46%, Test Acc: 90.84% | Gate Entropy: 0.9663, Active Gates: 0.43
+2025-04-16 06:06:01,049 - INFO - Epoch 9/10 - Train Acc: 91.70%, Test Acc: 90.64% | Gate Entropy: 0.5366, Active Gates: 0.43
+2025-04-16 06:07:10,804 - INFO - Epoch 10/10 - Train Acc: 91.97%, Test Acc: 90.37% | Gate Entropy: 0.5343, Active Gates: 0.45
+2025-04-16 06:07:11,738 - INFO - Preparing to plot proxy compute vs accuracy for ag_news
+2025-04-16 06:07:11,739 - INFO - Number of models: 7
+2025-04-16 06:07:11,739 - INFO - Generating proxy compute vs accuracy plot for ag_news
+2025-04-16 06:07:11,739 - INFO - Model names: ['NdLinear', 'NdLinearGated_soft_all_16', 'NdLinearGated_hard_all_16', 'NdLinearGated_soft_all_4', 'NdLinearGated_soft_all_64', 'NdLinearGated_soft_first_16', 'NdLinearGated_soft_topk_16']
+2025-04-16 06:07:11,739 - INFO - Proxy computes: [102400, 76520.90380859375, 102400.0, 100406.94482421875, 26421.54315185547, 54689.2265625, 2530.611541748047]
+2025-04-16 06:07:11,739 - INFO - Accuracies: [90.69736842105263, 90.65789473684211, 90.86842105263158, 90.5657894736842, 90.47368421052632, 90.77631578947368, 90.84210526315789]
+2025-04-16 06:07:14,223 - INFO - Plot saved to outputs/plots/models_ag_news_proxy_compute_vs_accuracy.png and outputs/ag_news/plots/models_proxy_compute_vs_accuracy.png
+2025-04-16 06:07:14,224 - INFO - 
+=== Running experiments on imdb dataset ===
+2025-04-16 06:07:14,224 - INFO - 
+Running NdLinear_imdb
+2025-04-16 06:09:03,015 - INFO - Epoch 1/10 - Train Acc: 66.68%, Test Acc: 76.76% | 
+2025-04-16 06:10:07,952 - INFO - Epoch 2/10 - Train Acc: 80.03%, Test Acc: 79.53% | 
+2025-04-16 06:11:12,789 - INFO - Epoch 3/10 - Train Acc: 82.70%, Test Acc: 80.31% | 
+2025-04-16 06:12:17,569 - INFO - Epoch 4/10 - Train Acc: 84.22%, Test Acc: 82.21% | 
+2025-04-16 06:13:22,289 - INFO - Epoch 5/10 - Train Acc: 85.47%, Test Acc: 82.10% | 
+2025-04-16 06:14:27,124 - INFO - Epoch 6/10 - Train Acc: 85.74%, Test Acc: 80.80% | 
+2025-04-16 06:15:31,771 - INFO - Epoch 7/10 - Train Acc: 86.86%, Test Acc: 83.25% | 
+2025-04-16 06:16:36,417 - INFO - Epoch 8/10 - Train Acc: 87.48%, Test Acc: 83.30% | 
+2025-04-16 06:17:42,701 - INFO - Epoch 9/10 - Train Acc: 87.41%, Test Acc: 81.71% | 
+2025-04-16 06:18:47,278 - INFO - Epoch 10/10 - Train Acc: 88.47%, Test Acc: 81.86% | 
+2025-04-16 06:18:47,842 - INFO - 
+Running NdLinearGated_soft_all_16_imdb
+2025-04-16 06:19:54,990 - INFO - Epoch 1/10 - Train Acc: 66.92%, Test Acc: 71.90% | Gate Entropy: 0.9937, Active Gates: 0.45
+2025-04-16 06:21:03,564 - INFO - Epoch 2/10 - Train Acc: 80.34%, Test Acc: 80.07% | Gate Entropy: 0.9954, Active Gates: 0.46
+2025-04-16 06:22:10,279 - INFO - Epoch 3/10 - Train Acc: 83.31%, Test Acc: 81.15% | Gate Entropy: 0.9946, Active Gates: 0.46
+2025-04-16 06:23:17,893 - INFO - Epoch 4/10 - Train Acc: 84.18%, Test Acc: 81.50% | Gate Entropy: 0.9945, Active Gates: 0.46
+2025-04-16 06:24:24,619 - INFO - Epoch 5/10 - Train Acc: 85.18%, Test Acc: 80.62% | Gate Entropy: 0.9943, Active Gates: 0.46
+2025-04-16 06:25:31,483 - INFO - Epoch 6/10 - Train Acc: 86.32%, Test Acc: 81.99% | Gate Entropy: 0.9928, Active Gates: 0.45
+2025-04-16 06:26:38,398 - INFO - Epoch 7/10 - Train Acc: 86.71%, Test Acc: 82.40% | Gate Entropy: 0.9925, Active Gates: 0.45
+2025-04-16 06:27:47,577 - INFO - Epoch 8/10 - Train Acc: 87.32%, Test Acc: 83.00% | Gate Entropy: 0.9918, Active Gates: 0.45
+2025-04-16 06:28:54,695 - INFO - Epoch 9/10 - Train Acc: 88.02%, Test Acc: 80.77% | Gate Entropy: 0.9914, Active Gates: 0.45
+2025-04-16 06:30:01,558 - INFO - Epoch 10/10 - Train Acc: 88.72%, Test Acc: 82.26% | Gate Entropy: 0.9901, Active Gates: 0.44
+2025-04-16 06:30:02,604 - INFO - 
+Running NdLinearGated_hard_all_16_imdb
+2025-04-16 06:31:09,476 - INFO - Epoch 1/10 - Train Acc: 63.93%, Test Acc: 73.14% | Gate Entropy: 0.9991, Active Gates: 0.50
+2025-04-16 06:32:20,422 - INFO - Epoch 2/10 - Train Acc: 79.04%, Test Acc: 77.18% | Gate Entropy: 0.9804, Active Gates: 0.50
+2025-04-16 06:33:26,377 - INFO - Epoch 3/10 - Train Acc: 81.92%, Test Acc: 79.82% | Gate Entropy: 0.9840, Active Gates: 0.50
+2025-04-16 06:34:33,031 - INFO - Epoch 4/10 - Train Acc: 83.49%, Test Acc: 81.62% | Gate Entropy: 0.9966, Active Gates: 0.50
+2025-04-16 06:35:39,172 - INFO - Epoch 5/10 - Train Acc: 84.65%, Test Acc: 80.79% | Gate Entropy: 0.9862, Active Gates: 0.50
+2025-04-16 06:36:45,387 - INFO - Epoch 6/10 - Train Acc: 84.45%, Test Acc: 80.93% | Gate Entropy: 0.9552, Active Gates: 1.00
+2025-04-16 06:37:51,539 - INFO - Epoch 7/10 - Train Acc: 85.84%, Test Acc: 81.10% | Gate Entropy: 0.9961, Active Gates: 0.50
+2025-04-16 06:38:58,178 - INFO - Epoch 8/10 - Train Acc: 86.43%, Test Acc: 80.98% | Gate Entropy: 0.9260, Active Gates: 0.50
+2025-04-16 06:40:04,604 - INFO - Epoch 9/10 - Train Acc: 86.86%, Test Acc: 78.96% | Gate Entropy: 0.9847, Active Gates: 1.00
+2025-04-16 06:41:10,792 - INFO - Epoch 10/10 - Train Acc: 86.77%, Test Acc: 82.24% | Gate Entropy: 0.9976, Active Gates: 0.00
+2025-04-16 06:41:11,513 - INFO - 
+Running NdLinearGated_soft_all_4_imdb
+2025-04-16 06:42:18,258 - INFO - Epoch 1/10 - Train Acc: 67.88%, Test Acc: 75.74% | Gate Entropy: 0.9687, Active Gates: 0.40
+2025-04-16 06:43:25,458 - INFO - Epoch 2/10 - Train Acc: 80.44%, Test Acc: 78.99% | Gate Entropy: 0.9638, Active Gates: 0.39
+2025-04-16 06:44:31,733 - INFO - Epoch 3/10 - Train Acc: 82.88%, Test Acc: 81.26% | Gate Entropy: 0.9592, Active Gates: 0.38
+2025-04-16 06:45:38,466 - INFO - Epoch 4/10 - Train Acc: 84.19%, Test Acc: 81.50% | Gate Entropy: 0.9578, Active Gates: 0.38
+2025-04-16 06:46:44,610 - INFO - Epoch 5/10 - Train Acc: 84.84%, Test Acc: 79.93% | Gate Entropy: 0.9531, Active Gates: 0.37
+2025-04-16 06:47:50,844 - INFO - Epoch 6/10 - Train Acc: 85.78%, Test Acc: 81.98% | Gate Entropy: 0.9450, Active Gates: 0.36
+2025-04-16 06:48:58,623 - INFO - Epoch 7/10 - Train Acc: 86.12%, Test Acc: 82.69% | Gate Entropy: 0.9394, Active Gates: 0.36
+2025-04-16 06:50:11,784 - INFO - Epoch 8/10 - Train Acc: 87.06%, Test Acc: 82.06% | Gate Entropy: 0.9283, Active Gates: 0.34
+2025-04-16 06:51:19,643 - INFO - Epoch 9/10 - Train Acc: 87.68%, Test Acc: 82.34% | Gate Entropy: 0.9192, Active Gates: 0.34
+2025-04-16 06:52:27,419 - INFO - Epoch 10/10 - Train Acc: 88.23%, Test Acc: 82.17% | Gate Entropy: 0.9099, Active Gates: 0.33
+2025-04-16 06:52:29,270 - INFO - 
+Running NdLinearGated_soft_all_64_imdb
+2025-04-16 06:53:36,714 - INFO - Epoch 1/10 - Train Acc: 62.71%, Test Acc: 75.58% | Gate Entropy: 0.9990, Active Gates: 0.48
+2025-04-16 06:54:44,830 - INFO - Epoch 2/10 - Train Acc: 80.07%, Test Acc: 79.09% | Gate Entropy: 0.9993, Active Gates: 0.49
+2025-04-16 06:55:52,386 - INFO - Epoch 3/10 - Train Acc: 83.05%, Test Acc: 81.87% | Gate Entropy: 0.9989, Active Gates: 0.49
+2025-04-16 06:57:00,517 - INFO - Epoch 4/10 - Train Acc: 84.72%, Test Acc: 82.64% | Gate Entropy: 0.9990, Active Gates: 0.49
+2025-04-16 06:58:07,806 - INFO - Epoch 5/10 - Train Acc: 85.40%, Test Acc: 80.54% | Gate Entropy: 0.9988, Active Gates: 0.48
+2025-04-16 06:59:15,072 - INFO - Epoch 6/10 - Train Acc: 86.36%, Test Acc: 81.62% | Gate Entropy: 0.9987, Active Gates: 0.48
+2025-04-16 07:00:22,651 - INFO - Epoch 7/10 - Train Acc: 87.24%, Test Acc: 83.88% | Gate Entropy: 0.9986, Active Gates: 0.48
+2025-04-16 07:01:31,437 - INFO - Epoch 8/10 - Train Acc: 87.86%, Test Acc: 82.98% | Gate Entropy: 0.9980, Active Gates: 0.48
+2025-04-16 07:02:38,618 - INFO - Epoch 9/10 - Train Acc: 88.39%, Test Acc: 82.08% | Gate Entropy: 0.9978, Active Gates: 0.48
+2025-04-16 07:03:46,998 - INFO - Epoch 10/10 - Train Acc: 88.91%, Test Acc: 81.94% | Gate Entropy: 0.9978, Active Gates: 0.48
+2025-04-16 07:03:48,211 - INFO - 
+Running NdLinearGated_soft_first_16_imdb
+2025-04-16 07:04:54,466 - INFO - Epoch 1/10 - Train Acc: 67.28%, Test Acc: 76.52% | Gate Entropy: 0.9916, Active Gates: 0.40
+2025-04-16 07:06:01,443 - INFO - Epoch 2/10 - Train Acc: 80.16%, Test Acc: 80.41% | Gate Entropy: 0.9990, Active Gates: 0.44
+2025-04-16 07:07:07,656 - INFO - Epoch 3/10 - Train Acc: 82.99%, Test Acc: 82.00% | Gate Entropy: 0.9807, Active Gates: 0.44
+2025-04-16 07:08:14,035 - INFO - Epoch 4/10 - Train Acc: 84.43%, Test Acc: 80.90% | Gate Entropy: 0.9982, Active Gates: 0.43
+2025-04-16 07:09:20,127 - INFO - Epoch 5/10 - Train Acc: 85.11%, Test Acc: 79.84% | Gate Entropy: 0.9832, Active Gates: 0.50
+2025-04-16 07:10:25,948 - INFO - Epoch 6/10 - Train Acc: 86.30%, Test Acc: 83.48% | Gate Entropy: 0.9762, Active Gates: 0.48
+2025-04-16 07:11:32,062 - INFO - Epoch 7/10 - Train Acc: 86.45%, Test Acc: 81.42% | Gate Entropy: 0.9874, Active Gates: 0.42
+2025-04-16 07:12:39,195 - INFO - Epoch 8/10 - Train Acc: 87.20%, Test Acc: 82.97% | Gate Entropy: 0.9958, Active Gates: 0.48
+2025-04-16 07:13:46,140 - INFO - Epoch 9/10 - Train Acc: 87.98%, Test Acc: 82.92% | Gate Entropy: 0.9971, Active Gates: 0.47
+2025-04-16 07:15:03,594 - INFO - Epoch 10/10 - Train Acc: 88.60%, Test Acc: 81.08% | Gate Entropy: 0.9957, Active Gates: 0.45
+2025-04-16 07:15:04,603 - INFO - 
+Running NdLinearGated_soft_topk_16_imdb
+2025-04-16 07:16:11,233 - INFO - Epoch 1/10 - Train Acc: 67.18%, Test Acc: 78.03% | Gate Entropy: 0.9969, Active Gates: 0.51
+2025-04-16 07:17:18,115 - INFO - Epoch 2/10 - Train Acc: 79.50%, Test Acc: 81.18% | Gate Entropy: 0.9942, Active Gates: 0.49
+2025-04-16 07:18:24,722 - INFO - Epoch 3/10 - Train Acc: 83.37%, Test Acc: 78.98% | Gate Entropy: 0.9950, Active Gates: 0.50
+2025-04-16 07:19:32,147 - INFO - Epoch 4/10 - Train Acc: 84.55%, Test Acc: 77.75% | Gate Entropy: 0.9941, Active Gates: 0.50
+2025-04-16 07:20:38,520 - INFO - Epoch 5/10 - Train Acc: 85.32%, Test Acc: 79.97% | Gate Entropy: 0.9943, Active Gates: 0.50
+2025-04-16 07:21:44,983 - INFO - Epoch 6/10 - Train Acc: 86.04%, Test Acc: 82.80% | Gate Entropy: 0.9938, Active Gates: 0.50
+2025-04-16 07:22:51,394 - INFO - Epoch 7/10 - Train Acc: 86.42%, Test Acc: 83.21% | Gate Entropy: 0.9929, Active Gates: 0.50
+2025-04-16 07:23:58,280 - INFO - Epoch 8/10 - Train Acc: 87.42%, Test Acc: 82.19% | Gate Entropy: 0.9918, Active Gates: 0.50
+2025-04-16 07:25:04,812 - INFO - Epoch 9/10 - Train Acc: 87.85%, Test Acc: 82.55% | Gate Entropy: 0.9911, Active Gates: 0.50
+2025-04-16 07:26:14,115 - INFO - Epoch 10/10 - Train Acc: 87.99%, Test Acc: 81.48% | Gate Entropy: 0.9901, Active Gates: 0.50
+2025-04-16 07:26:14,902 - INFO - Preparing to plot proxy compute vs accuracy for imdb
+2025-04-16 07:26:14,902 - INFO - Number of models: 7
+2025-04-16 07:26:14,902 - INFO - Generating proxy compute vs accuracy plot for imdb
+2025-04-16 07:26:14,902 - INFO - Model names: ['NdLinear', 'NdLinearGated_soft_all_16', 'NdLinearGated_hard_all_16', 'NdLinearGated_soft_all_4', 'NdLinearGated_soft_all_64', 'NdLinearGated_soft_first_16', 'NdLinearGated_soft_topk_16']
+2025-04-16 07:26:14,902 - INFO - Proxy computes: [106496, 46550.695068359375, 8192.0, 32841.76904296875, 49506.0849609375, 46617.73779296875, 58870.39599609375]
+2025-04-16 07:26:14,902 - INFO - Accuracies: [83.304, 83.004, 82.236, 82.692, 83.884, 83.476, 83.212]
+2025-04-16 07:26:15,995 - INFO - Plot saved to outputs/plots/models_imdb_proxy_compute_vs_accuracy.png and outputs/imdb/plots/models_proxy_compute_vs_accuracy.png
+2025-04-16 07:26:15,996 - INFO - 
+All experiments completed.
+2025-04-16 07:26:15,996 - INFO - Results saved to outputs/results_table.csv
+2025-04-16 07:26:15,996 - INFO - Experiment manifest saved to outputs/experiment_manifest.yaml
+=== Python script finished at Wed Apr 16 07:27:01 CDT 2025 with exit code  ===
+=== Job finished at Wed Apr 16 07:27:01 CDT 2025 ===

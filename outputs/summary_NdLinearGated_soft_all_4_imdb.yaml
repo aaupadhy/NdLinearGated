@@ -1,0 +1,27 @@
+accuracy: 82.692
+dataset: imdb
+gate_entropy: !!python/object/apply:numpy._core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  WFmXP+gd7T8=
+gated_modes: all
+gating_hidden_dim: 4
+gating_mode: soft
+model: NdLinearGated_soft_all_4
+peak_memory_mb: 508.72021484375
+percent_active_slices: 32.66070634126663
+proxy_compute: 32841.76904296875
+train_time: 675.7367086410522

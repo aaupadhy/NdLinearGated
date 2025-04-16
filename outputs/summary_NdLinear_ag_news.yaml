@@ -1,0 +1,8 @@
+accuracy: 90.69736842105263
+dataset: ag_news
+gate_entropy: 0
+model: NdLinear
+peak_memory_mb: 474.302734375
+percent_active_slices: 100.0
+proxy_compute: 102400
+train_time: 682.7353773117065

@@ -1,0 +1,27 @@
+accuracy: 92.11
+dataset: mnist
+gate_entropy: !!python/object/apply:numpy._core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  sOV3nNtO7z8=
+gated_modes: topk
+gating_hidden_dim: 16
+gating_mode: soft
+model: NdLinearGated_soft_topk_16
+peak_memory_mb: 106.986328125
+percent_active_slices: 46.714238325754806
+proxy_compute: 1710.3054084777832
+train_time: 335.8237202167511

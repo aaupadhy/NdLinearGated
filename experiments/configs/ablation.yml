@@ -1,0 +1,56 @@
+
+model_configs:
+  - name: NdLinear
+    params: {}
+  - name: NdLinearGated
+    params:
+      gating_mode: soft
+      gating_hidden_dim: 16
+      gated_modes: all
+  - name: NdLinearGated
+    params:
+      gating_mode: hard
+      gating_hidden_dim: 16
+      gated_modes: all
+  - name: NdLinearGated
+    params:
+      gating_mode: soft
+      gating_hidden_dim: 4
+      gated_modes: all
+  - name: NdLinearGated
+    params:
+      gating_mode: soft
+      gating_hidden_dim: 64
+      gated_modes: all
+  - name: NdLinearGated
+    params:
+      gating_mode: soft
+      gating_hidden_dim: 16
+      gated_modes: first
+  - name: NdLinearGated
+    params:
+      gating_mode: soft
+      gating_hidden_dim: 16
+      gated_modes: topk
+
+datasets:
+  - name: cifar10
+    batch_size: 128
+  - name: mnist
+    batch_size: 128
+  - name: ag_news
+    batch_size: 64
+  - name: imdb
+    batch_size: 32
+
+training:
+  epochs: 10
+  lr: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 8
+  save_every_n_epochs: 2
+
+# Gate transfer study
+gate_transfer:
+  source_dataset: cifar10
+  target_datasets: [mnist, imdb] 

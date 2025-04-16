@@ -1,0 +1,436 @@
+NdLinearGated_hard_all_16_ag_news:
+  config_file: experiments/configs/ablation.yml
+  dataset: ag_news
+  experiment_name: NdLinearGated_hard_all_16_ag_news
+  gated_modes: all
+  gating_hidden_dim: 16
+  gating_mode: hard
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_hard_all_16_ag_news_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_hard_all_16_ag_news_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_hard_all_16_ag_news_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_hard_all_16_ag_news.yaml
+NdLinearGated_hard_all_16_cifar10:
+  config_file: experiments/configs/ablation.yml
+  dataset: cifar10
+  experiment_name: NdLinearGated_hard_all_16_cifar10
+  gated_modes: all
+  gating_hidden_dim: 16
+  gating_mode: hard
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_hard_all_16_cifar10_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_hard_all_16_cifar10_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_hard_all_16_cifar10_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_hard_all_16_cifar10.yaml
+NdLinearGated_hard_all_16_imdb:
+  config_file: experiments/configs/ablation.yml
+  dataset: imdb
+  experiment_name: NdLinearGated_hard_all_16_imdb
+  gated_modes: all
+  gating_hidden_dim: 16
+  gating_mode: hard
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_hard_all_16_imdb_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_hard_all_16_imdb_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_hard_all_16_imdb_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_hard_all_16_imdb.yaml
+NdLinearGated_hard_all_16_mnist:
+  config_file: experiments/configs/ablation.yml
+  dataset: mnist
+  experiment_name: NdLinearGated_hard_all_16_mnist
+  gated_modes: all
+  gating_hidden_dim: 16
+  gating_mode: hard
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_hard_all_16_mnist_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_hard_all_16_mnist_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_hard_all_16_mnist_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_hard_all_16_mnist.yaml
+NdLinearGated_soft_all_16_ag_news:
+  config_file: experiments/configs/ablation.yml
+  dataset: ag_news
+  experiment_name: NdLinearGated_soft_all_16_ag_news
+  gated_modes: all
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_16_ag_news_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_16_ag_news_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_16_ag_news_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_16_ag_news.yaml
+NdLinearGated_soft_all_16_cifar10:
+  config_file: experiments/configs/ablation.yml
+  dataset: cifar10
+  experiment_name: NdLinearGated_soft_all_16_cifar10
+  gated_modes: all
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_16_cifar10_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_16_cifar10_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_16_cifar10_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_16_cifar10.yaml
+NdLinearGated_soft_all_16_imdb:
+  config_file: experiments/configs/ablation.yml
+  dataset: imdb
+  experiment_name: NdLinearGated_soft_all_16_imdb
+  gated_modes: all
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_16_imdb_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_16_imdb_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_16_imdb_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_16_imdb.yaml
+NdLinearGated_soft_all_16_mnist:
+  config_file: experiments/configs/ablation.yml
+  dataset: mnist
+  experiment_name: NdLinearGated_soft_all_16_mnist
+  gated_modes: all
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_16_mnist_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_16_mnist_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_16_mnist_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_16_mnist.yaml
+NdLinearGated_soft_all_4_ag_news:
+  config_file: experiments/configs/ablation.yml
+  dataset: ag_news
+  experiment_name: NdLinearGated_soft_all_4_ag_news
+  gated_modes: all
+  gating_hidden_dim: 4
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_4_ag_news_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_4_ag_news_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_4_ag_news_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_4_ag_news.yaml
+NdLinearGated_soft_all_4_cifar10:
+  config_file: experiments/configs/ablation.yml
+  dataset: cifar10
+  experiment_name: NdLinearGated_soft_all_4_cifar10
+  gated_modes: all
+  gating_hidden_dim: 4
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_4_cifar10_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_4_cifar10_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_4_cifar10_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_4_cifar10.yaml
+NdLinearGated_soft_all_4_imdb:
+  config_file: experiments/configs/ablation.yml
+  dataset: imdb
+  experiment_name: NdLinearGated_soft_all_4_imdb
+  gated_modes: all
+  gating_hidden_dim: 4
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_4_imdb_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_4_imdb_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_4_imdb_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_4_imdb.yaml
+NdLinearGated_soft_all_4_mnist:
+  config_file: experiments/configs/ablation.yml
+  dataset: mnist
+  experiment_name: NdLinearGated_soft_all_4_mnist
+  gated_modes: all
+  gating_hidden_dim: 4
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_4_mnist_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_4_mnist_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_4_mnist_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_4_mnist.yaml
+NdLinearGated_soft_all_64_ag_news:
+  config_file: experiments/configs/ablation.yml
+  dataset: ag_news
+  experiment_name: NdLinearGated_soft_all_64_ag_news
+  gated_modes: all
+  gating_hidden_dim: 64
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_64_ag_news_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_64_ag_news_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_64_ag_news_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_64_ag_news.yaml
+NdLinearGated_soft_all_64_cifar10:
+  config_file: experiments/configs/ablation.yml
+  dataset: cifar10
+  experiment_name: NdLinearGated_soft_all_64_cifar10
+  gated_modes: all
+  gating_hidden_dim: 64
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_64_cifar10_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_64_cifar10_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_64_cifar10_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_64_cifar10.yaml
+NdLinearGated_soft_all_64_imdb:
+  config_file: experiments/configs/ablation.yml
+  dataset: imdb
+  experiment_name: NdLinearGated_soft_all_64_imdb
+  gated_modes: all
+  gating_hidden_dim: 64
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_64_imdb_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_64_imdb_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_64_imdb_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_64_imdb.yaml
+NdLinearGated_soft_all_64_mnist:
+  config_file: experiments/configs/ablation.yml
+  dataset: mnist
+  experiment_name: NdLinearGated_soft_all_64_mnist
+  gated_modes: all
+  gating_hidden_dim: 64
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_all_64_mnist_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_all_64_mnist_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_all_64_mnist_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_all_64_mnist.yaml
+NdLinearGated_soft_first_16_ag_news:
+  config_file: experiments/configs/ablation.yml
+  dataset: ag_news
+  experiment_name: NdLinearGated_soft_first_16_ag_news
+  gated_modes: first
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_first_16_ag_news_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_first_16_ag_news_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_first_16_ag_news_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_first_16_ag_news.yaml
+NdLinearGated_soft_first_16_cifar10:
+  config_file: experiments/configs/ablation.yml
+  dataset: cifar10
+  experiment_name: NdLinearGated_soft_first_16_cifar10
+  gated_modes: first
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_first_16_cifar10_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_first_16_cifar10_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_first_16_cifar10_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_first_16_cifar10.yaml
+NdLinearGated_soft_first_16_imdb:
+  config_file: experiments/configs/ablation.yml
+  dataset: imdb
+  experiment_name: NdLinearGated_soft_first_16_imdb
+  gated_modes: first
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_first_16_imdb_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_first_16_imdb_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_first_16_imdb_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_first_16_imdb.yaml
+NdLinearGated_soft_first_16_mnist:
+  config_file: experiments/configs/ablation.yml
+  dataset: mnist
+  experiment_name: NdLinearGated_soft_first_16_mnist
+  gated_modes: first
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_first_16_mnist_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_first_16_mnist_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_first_16_mnist_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_first_16_mnist.yaml
+NdLinearGated_soft_topk_16_ag_news:
+  config_file: experiments/configs/ablation.yml
+  dataset: ag_news
+  experiment_name: NdLinearGated_soft_topk_16_ag_news
+  gated_modes: topk
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_topk_16_ag_news_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_topk_16_ag_news_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_topk_16_ag_news_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_topk_16_ag_news.yaml
+NdLinearGated_soft_topk_16_cifar10:
+  config_file: experiments/configs/ablation.yml
+  dataset: cifar10
+  experiment_name: NdLinearGated_soft_topk_16_cifar10
+  gated_modes: topk
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_topk_16_cifar10_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_topk_16_cifar10_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_topk_16_cifar10_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_topk_16_cifar10.yaml
+NdLinearGated_soft_topk_16_imdb:
+  config_file: experiments/configs/ablation.yml
+  dataset: imdb
+  experiment_name: NdLinearGated_soft_topk_16_imdb
+  gated_modes: topk
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_topk_16_imdb_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_topk_16_imdb_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_topk_16_imdb_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_topk_16_imdb.yaml
+NdLinearGated_soft_topk_16_mnist:
+  config_file: experiments/configs/ablation.yml
+  dataset: mnist
+  experiment_name: NdLinearGated_soft_topk_16_mnist
+  gated_modes: topk
+  gating_hidden_dim: 16
+  gating_mode: soft
+  model: NdLinearGated
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinearGated_soft_topk_16_mnist_accuracy_curve.png
+    active_gate_distribution: outputs/plots/NdLinearGated_soft_topk_16_mnist_active_gate_distribution.png
+    entropy_curve: outputs/plots/NdLinearGated_soft_topk_16_mnist_entropy_curve.png
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinearGated_soft_topk_16_mnist.yaml
+NdLinear_ag_news:
+  config_file: experiments/configs/ablation.yml
+  dataset: ag_news
+  experiment_name: NdLinear_ag_news
+  model: NdLinear
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinear_ag_news_accuracy_curve.png
+    active_gate_distribution: null
+    entropy_curve: null
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinear_ag_news.yaml
+NdLinear_cifar10:
+  config_file: experiments/configs/ablation.yml
+  dataset: cifar10
+  experiment_name: NdLinear_cifar10
+  model: NdLinear
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinear_cifar10_accuracy_curve.png
+    active_gate_distribution: null
+    entropy_curve: null
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinear_cifar10.yaml
+NdLinear_imdb:
+  config_file: experiments/configs/ablation.yml
+  dataset: imdb
+  experiment_name: NdLinear_imdb
+  model: NdLinear
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinear_imdb_accuracy_curve.png
+    active_gate_distribution: null
+    entropy_curve: null
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinear_imdb.yaml
+NdLinear_mnist:
+  config_file: experiments/configs/ablation.yml
+  dataset: mnist
+  experiment_name: NdLinear_mnist
+  model: NdLinear
+  output_dir: outputs
+  plots:
+    accuracy_curve: outputs/plots/NdLinear_mnist_accuracy_curve.png
+    active_gate_distribution: null
+    entropy_curve: null
+    profiler_plot: null
+  results_row: outputs/results_table.csv
+  summary_yaml: outputs/summary_NdLinear_mnist.yaml

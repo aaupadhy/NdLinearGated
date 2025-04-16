@@ -1,0 +1,8 @@
+accuracy: 83.304
+dataset: imdb
+gate_entropy: 0
+model: NdLinear
+peak_memory_mb: 474.47265625
+percent_active_slices: 100.0
+proxy_compute: 106496
+train_time: 692.8868236541748
