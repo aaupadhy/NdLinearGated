@@ -1,9 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "NdLinear"
 version = "0.1.0"
 description = "An environment setup to support NdLinear. "
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
     "accelerate>=1.5.2",
     "einops>=0.8.1",
@@ -16,6 +20,13 @@ dependencies = [
     "torchvision>=0.21.0",
     "matplotlib>=3.10.1",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["ndlinear"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
 [tool.uv.sources]
 torch = [
   { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
